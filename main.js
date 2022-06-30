@@ -145,17 +145,25 @@ posts.forEach( element => {
 const likeButton = document.querySelectorAll('div.likes__cta');
 const likeIcon = document.querySelectorAll('i.like-button__icon');
 const likeLabel = document.querySelectorAll('span.like-button__label');
+console.log(likeButton);
 
 
-likeButton.addEventListener('click', function(){
 
-    posts.forEach( element => {
-        likeButton.classList.add('blue_btn');
-        likeIcon.classList.add('white-txt');
-        likeLabel.classList.add('white-txt');
-        
+
+likeButton.forEach((element, i) => {
+    element.addEventListener('click', function(){
+             
+
+        if (is_valid === false){
+            likeButton[i].classlist.toggle('blue_btn');
+            likeIcon[i].classlist.toggle('white-txt');
+            likeLabel[i].classlist.toggle('white-txt');
+        };
+
+
     });
-});
+});    
+
 
 
 
