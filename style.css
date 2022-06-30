@@ -123,3 +123,14 @@ h1 {
     color: #0CD977;
     cursor: default;
 }
+
+
+/* MY CSS  */
+.blue_btn{
+    background-color: rgb(59, 59, 196);
+    border-radius: 5px;
+}
+
+.white-txt{
+    color: white;
+}

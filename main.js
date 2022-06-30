@@ -142,7 +142,19 @@ posts.forEach( element => {
 });
 
 
+const likeButton = document.querySelector('div.likes__cta');
+const likeIcon = document.querySelector('i.like-button__icon');
+const likeLabel = document.querySelector('span.like-button__label');
 
+
+likeButton.addEventListener('click', function(){
+
+    likeButton.classList.add('blue_btn');
+    likeIcon.classList.add('white-txt');
+    likeLabel.classList.add('white-txt');
+    
+
+});
 
 
 
