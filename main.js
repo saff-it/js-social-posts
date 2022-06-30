@@ -150,11 +150,13 @@ console.log(likeButton);
 
 
 
+let validation = posts['is_valid'];
+
 likeButton.forEach((element, i) => {
     element.addEventListener('click', function(){
              
 
-        if (is_valid === false){
+        if (validation === false){
             likeButton[i].classlist.toggle('blue_btn');
             likeIcon[i].classlist.toggle('white-txt');
             likeLabel[i].classlist.toggle('white-txt');
